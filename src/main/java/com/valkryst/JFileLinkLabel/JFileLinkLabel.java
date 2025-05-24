@@ -61,6 +61,8 @@ public class JFileLinkLabel extends JLabel implements MouseListener {
 
         this.setForeground(UIManager.getColor("textHighlight"));
         this.setText(text);
+
+        this.addMouseListener(this);
     }
 
     /**
