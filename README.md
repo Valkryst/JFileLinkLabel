@@ -7,6 +7,7 @@
     * [Gradle](https://github.com/Valkryst/JFileLinkLabel#-gradle)
     * [Maven](https://github.com/Valkryst/JFileLinkLabel#-maven)
     * [sbt](https://github.com/Valkryst/JFileLinkLabel#-scala-sbt)
+* [Example](https://github.com/Valkryst/JFileLinkLabel#example)
 
 ## Installation
 
@@ -68,4 +69,34 @@ Add JFileLinkLabel as a dependency.
 
 ```
 libraryDependencies += "com.github.Valkryst" % "JFileLinkLabel" % "2025.5.26"
+```
+
+## Example
+
+This creates a new `JFileLinkLabel` and displays it in a `JFrame`.
+
+```java
+public class Driver {
+  public static void main(final String[] args) {
+    SwingUtilities.invokeLater(() -> {
+      final JFileLinkLabel link = new JFileLinkLabel(
+              "Link to Home Directory",
+              Paths.get(System.getProperty("user.home"))
+      );
+      link.setForeground(Color.BLUE);
+
+      final JFrame frame = new JFrame("JFileLinkLabel Example");
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      frame.setPreferredSize(new Dimension(400, 100));
+
+      final Container contentPane = frame.getContentPane();
+      contentPane.setLayout(new BorderLayout());
+      contentPane.add(link, BorderLayout.CENTER);
+
+      frame.setVisible(true);
+      frame.pack();
+      frame.setLocationRelativeTo(null);
+    });
+  }
+}
 ```
