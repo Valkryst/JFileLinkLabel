@@ -146,7 +146,11 @@ public class JFileLinkLabel extends JLabel implements MouseListener {
 
     @Override
     public void setText(final String text) {
-        super.setText("<html><u>" + text + "</u></html>");
+        if (text == null || text.isEmpty()) {
+            super.setText(text);
+        } else {
+            super.setText("<html><u>" + text + "</u></html>");
+        }
     }
 
     /**
