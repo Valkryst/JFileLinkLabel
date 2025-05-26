@@ -172,6 +172,15 @@ public class JFileLinkLabel extends JLabel implements MouseListener {
     }
 
     /**
+     * Retrieves the value of {@link #foregroundColor}.
+     *
+     * @return Value of {@link #foregroundColor}.
+     */
+    public float getBrightnessMultiplier() {
+        return brightnessMultiplier;
+    }
+
+    /**
      * Sets a new value for {@link #brightnessMultiplier}.
      *
      * @param brightnessMultiplier The new value.
