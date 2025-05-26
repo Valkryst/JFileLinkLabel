@@ -30,7 +30,7 @@ Add JFileLinkLabel as a dependency.
 
 ```
 dependencies {
-	implementation 'com.github.Valkryst:JFileLinkLabel:2025.5.24'
+	implementation 'com.github.Valkryst:JFileLinkLabel:2025.5.26'
 }
 ```
 
@@ -52,7 +52,7 @@ Add JFileLinkLabel as a dependency.
 <dependency>
     <groupId>com.github.Valkryst</groupId>
     <artifactId>JFileLinkLabel</artifactId>
-    <version>2025.5.24</version>
+    <version>2025.5.26</version>
 </dependency>
 ```
 
@@ -67,5 +67,5 @@ resolvers += "jitpack" at "https://jitpack.io"
 Add JFileLinkLabel as a dependency.
 
 ```
-libraryDependencies += "com.github.Valkryst" % "JFileLinkLabel" % "2025.5.24"
+libraryDependencies += "com.github.Valkryst" % "JFileLinkLabel" % "2025.5.26"
 ```
